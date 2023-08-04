@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Discord Staff Application</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <img src="img/dc.png" alt="dc">
+            <h1 id="title">Staff Application</h1>
+            <p id="description">Discord Server Staff Form</p>
+        </div>
+        <hr>
+        <form action="submit" id="survey-form">
+            <div class="name">
+                <label for="name" id="name-label">Name 
+                    <input type="text" id="name" required placeholder="First name">
+                    <input type="text" id="first_name" required placeholder="Last name">
+                </label>
+            </div>
+            <div class="email">
+                <label for="email" id="email-label">Email <input type="email" id="email" required placeholder="example@example.com"></label>
+            </div>
+            <div class="dc-name">
+                <label for="dc-name" class="dc-name">Discord Username <input type="text" id="dc-name" required placeholder="Example#9999"></label>
+            </div>
+            <div class="phone">
+                <label for="number" id="number-label">Telephone Number <input type="number" id="number" min="0" max="9999999999999999" placeholder="+994 xx xxx xx xx"></label>
+            </div>
+            <div class="gender">
+                <p>Gender</p>
+                <label for="male">Male <input value="male" type="radio" name="gender" id="male"></label>
+                <label for="female">Female <input value="female" type="radio" name="gender" id="female"></label>
+                <label for="na">N/A <input value="na" type="radio" name="gender" id="na"></label>
+            </div>
+            <div class="checkbox">
+                <p>Select the applicable one(s) for you</p>
+                <label for="1st">I have a working microphone that is active and working <input value="1st" type="checkbox" name="1st" id="1st"></label>
+                <label for="2nd">I have been a staff on a server before <input value="2nd" type="checkbox" name="2nd" id="2nd"></label>
+                <label for="other">Other <input value="other" type="checkbox" name="other" id="other"></label>
+            </div>
+            <div class="dropdown">
+                <p>Which staff role do you want to apply for?</p>
+                <select name="dropdown" id="dropdown">
+                    <option value="0">Select an option</option>
+                    <option value="mod">Moderator</option>
+                    <option value="fe">Front-End</option>
+                    <option value="be">Back-End</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="textbox">
+                <p>Tell us about yourself</p>
+                <textarea name="info" id="info" cols="30" rows="10" placeholder="Type here..."></textarea>
+            </div>
+            <hr>
+            <div class="submit">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
