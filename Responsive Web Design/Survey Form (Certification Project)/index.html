@@ -17,41 +17,93 @@
         </div>
         <div class="hr"></div>
         <form action="submit" id="survey-form">
-            <div class="col2">
-                <div class="name">
-                    <label for="name-label" id="name-label">Name</label>             
+            <div class="nameandmail">
+                <div class="col2">
+                    <div class="name">
+                        <label for="name-label" id="name-label">Name</label>             
+                    </div>
+                    <div class="email-label">
+                        <label for="email" id="email-label">Email</label>
+                    </div>
                 </div>
-                <div class="email-label">
-                    <label for="email" id="email-label">Email</label>
+                <div class="col2">
+                    <div class="short-input">
+                        <input type="text" id="name" required placeholder="First name"> 
+                        <input type="text" id="first_name" required placeholder="Last name"> 
+                    </div>
+                    <div class="long-input">
+                        <input type="email" id="email" required placeholder="example@example.com"> 
+                    </div>
+                </div>
+                <div class="col2" >
+                    <div class="nameph">
+                        <div class="ph">First name</div>
+                        <div class="ph">Last name</div>
+                    </div>
+                    <div class="mailph">
+                        <div class="ph">example@example.com</div>
+                    </div>
                 </div>
             </div>
-            <div class="col2">
-                <div class="name-input">
-                    <input type="text" id="name" required placeholder="First name">
-                    <input type="text" id="first_name" required placeholder="Last name">
+            <div class="dcphone">
+                <div class="col2" style="margin-top: 20px;">
+                    <div class="dc-name">
+                        <label for="dc-name" class="dc-name">Discord Username </label>
+                    </div>
+                    <div class="phone">
+                        <label for="number" id="number-label">Telephone Number </label>
+                    </div>
                 </div>
-                <div class="email-input">
-                    <input type="email" id="email" required placeholder="example@example.com">
+                <div class="col2">
+                    <div class="long-input">
+                    <input type="text" id="dc-name" required placeholder="Example#9999">
+                    </div>
+                    <div class="long-input">
+                        <input type="number" id="number" min="0" max="9999999999999999" placeholder="+994 xx xxx xx xx">
+                    </div>
+                </div>
+                <div class="col2">
+                    <div class="dcph">
+                        <div class="ph">Example#9999</div>
+                    </div>
+                    <div class="numbph">
+                        <div class="ph">+944 xx xxx xx xx</div>
+                    </div>
                 </div>
             </div>
             
-            <div class="dc-name">
-                <label for="dc-name" class="dc-name">Discord Username <input type="text" id="dc-name" required placeholder="Example#9999"></label>
-            </div>
-            <div class="phone">
-                <label for="number" id="number-label">Telephone Number <input type="number" id="number" min="0" max="9999999999999999" placeholder="+994 xx xxx xx xx"></label>
-            </div>
             <div class="gender">
                 <p>Gender</p>
-                <label for="male">Male <input value="male" type="radio" name="gender" id="male"></label>
-                <label for="female">Female <input value="female" type="radio" name="gender" id="female"></label>
-                <label for="na">N/A <input value="na" type="radio" name="gender" id="na"></label>
+                <div class="col3">
+                    <div class="male">
+                        <input value="male" type="radio" name="gender" id="male">
+                        <label for="male">Male </label>
+                    </div>
+                    <div class="female">
+                        <input value="female" type="radio" name="gender" id="female">
+                        <label for="female">Female</label> 
+                    </div>
+                    <div class="na">
+                        <input value="na" type="radio" name="gender" id="na">
+                        <label for="na">N/A </label>
+                    </div>
+                </div>
             </div>
-            <div class="checkbox">
+            <div class="hr" style="margin-top: 30px;"></div>
+            <div class="checkbox" >
                 <p>Select the applicable one(s) for you</p>
-                <label for="1st">I have a working microphone that is active and working <input value="1st" type="checkbox" name="1st" id="1st"></label>
-                <label for="2nd">I have been a staff on a server before <input value="2nd" type="checkbox" name="2nd" id="2nd"></label>
-                <label for="other">Other <input value="other" type="checkbox" name="other" id="other"></label>
+                <div class="1st">
+                    <input value="1st" type="checkbox" name="1st" id="1st">
+                    <label for="1st">I have a working microphone that is active and working </label>
+                </div>
+                <div class="2nd">
+                    <input value="2nd" type="checkbox" name="2nd" id="2nd">
+                    <label for="2nd">I have been a staff on a server before </label>
+                </div>
+                    <div class="other">
+                        <input value="other" type="checkbox" name="other" id="other">
+                        <label for="other">Other </label>
+                    </div>
             </div>
             <div class="dropdown">
                 <p>Which staff role do you want to apply for?</p>
