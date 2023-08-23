@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
+:root {
+    --color1: #FFFBE9;
+    --color2: #E3CAA5;
+    --color3: #E3CAA5;
+    --color4: #FFFBE9;
+    --border: #d4bea0;
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Comfortaa, sans-serif;
+    min-width: 290px;
+    line-height: 1.5;
+    background-color: var(--color1);
+}
+
+.header{
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+}
+
+.header img {
+    width: 100%;
+    max-width: 70px;
+    margin-left: 10px;
+}
+
+.header header {
+    margin: 10px;
+    text-align: center;
+    font-size: 25px;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  background-color: var(--color2);
+  color: var(--color4);
+  border-right: solid;
+}
+
+#main-doc header {
+    display: none;
+}
+
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  border-top: 1px solid var(--border);
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  padding: 20px 30px;
+  color: var(--color4);
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+h3 {
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+.main-link {
+    padding: 10px;
+    text-decoration: none;
+    color: #6572b6;
+}
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+  #navbar {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid var(--border);
+    background-color: var(--color2);
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+  #navbar header {
+    font-size: 18px;
+    margin-right: 0;
+  }
+
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(83, 55, 55); 
+    border-radius: 10px;
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #8f98c5; 
+    border-radius: 10px;
+}
+  
